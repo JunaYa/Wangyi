@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6" >
+    <RadioGroup
+        android:id="@+id/group_va_tab" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EB413D"
+        android:paddingLeft="20sp">
+        <RadioButton 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频"
+            android:padding="14sp"
+            android:button="@null"
+            android:textColor="@color/va_top_tab_text"
+            android:background="@drawable/tab_selector"
+            />
+        <RadioButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电台"
+            android:padding="14sp"
+            android:button="@null"
+            android:textColor="@color/va_top_tab_text"
+            android:background="@drawable/tab_selector"/>
+    </RadioGroup>
+	<android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_va"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

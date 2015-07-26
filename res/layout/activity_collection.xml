@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CollectionActivity" >
+
+    <RadioGroup 
+        android:id="@+id/group_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <RadioButton
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新闻" 
+        android:gravity="center"
+        android:padding="8sp"
+        android:button="@null"
+        android:textColor="@color/channel_bar_text"
+        android:background="@drawable/channel_selector"/>
+    <RadioButton
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跟帖" 
+        android:gravity="center"
+        android:padding="8sp"
+        android:button="@null"
+        android:textColor="@color/channel_bar_text"
+        android:background="@drawable/channel_selector"/>
+    <RadioButton
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片" 
+        android:gravity="center"
+        android:padding="8sp"
+        android:button="@null"
+        android:textColor="@color/channel_bar_text"
+        android:background="@drawable/channel_selector"/>
+    </RadioGroup>
+	
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></android.support.v4.view.ViewPager>
+        
+</LinearLayout>

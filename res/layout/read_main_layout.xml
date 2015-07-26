@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EB413D">
+	<RadioGroup
+        android:id="@+id/group_read_tab" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20sp">
+        <RadioButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐阅读"
+            android:padding="8sp"
+            android:button="@null"
+            android:textColor="@color/va_top_tab_text"
+            android:background="@drawable/tab_selector"
+            />
+        <RadioButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订阅"
+            android:padding="8sp"
+            android:button="@null"
+            android:textColor="@color/va_top_tab_text"
+            android:background="@drawable/tab_selector"/>
+    </RadioGroup>
+    <ImageView 
+        android:id="@+id/iv_read_menu_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_read_menu_add"
+        android:layout_alignParentRight="true"
+        android:paddingRight="8sp"
+        android:layout_centerVertical="true"/>
+   </RelativeLayout>
+   
+     <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></android.support.v4.view.ViewPager>
+	   
+</LinearLayout>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormalNewsActivity"
+    android:background="#000000" 
+    android:id="@+id/nomalnews_layout"
+>
+    <RelativeLayout 
+        android:id="@+id/newsdetail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/newsdetailback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/base_action_bar_back_black"
+            android:padding="10sp"
+            android:layout_centerVertical="true"/>
+        <TextView 
+            android:id="@+id/tv_base_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:padding="4sp"
+            android:text="1222222跟帖"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/biz_newspage_comment_bg"
+            android:layout_toLeftOf="@+id/iv_base_news_overflow"/>
+        <ImageView 
+            android:id="@+id/iv_base_news_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_newspage_menu_moreoverflow"
+            android:padding="10sp"
+            android:clickable="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_centerInParent="true"/>
+    <ScrollView 
+        android:layout_below="@+id/newsdetail_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8sp"
+            android:background="#F6F6F6">
+
+          
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#333"/>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView 
+                    android:id="@+id/tv_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textclor"/>
+                <TextView 
+                    android:id="@+id/tv_pTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+               </LinearLayout>
+            </LinearLayout>
+            <WebView 
+                android:id="@+id/webContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

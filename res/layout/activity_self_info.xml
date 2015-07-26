@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".SelfInfoActivity" >
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/pc_main_selfinfo_text_style"
+            android:text="基本信息"
+            android:textColor="@color/textclor" />
+   
+
+    <RelativeLayout
+        android:id="@+id/r_pc_self_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6sp"
+        >
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="邮箱" />
+	    <TextView
+	        android:id="@+id/textView1"
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="wangyajun213@163.com"
+	        android:textColor="@color/textclor"
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow" />
+	     <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r_pc_self_headimg"
+        style="@style/r_pc_main_setting_style"
+        android:padding="6sp">
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="头像" />
+	    <ImageView
+	        android:id="@+id/iv_pc_self_headimg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow" />
+	     <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r_pc_self_nickname"
+        style="@style/r_pc_main_setting_style"
+        android:padding="6sp">
+	   
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="呢称" />
+	    <TextView
+	        android:id="@+id/tv_pc_self_nickname"
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="wangyajun.com"
+	        android:textColor="@color/textclor"
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow"/>
+	    <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:padding="6sp"
+        style="@style/r_pc_main_setting_style">
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	    <TextView
+	        android:id="@+id/tv_pc_self_nicktie"
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="匿名跟帖" />
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="其他网友将不会看见你的用户名，头像和本人信息"
+	        android:textColor="@color/textclor"
+	        android:textSize="12sp"
+	        android:layout_marginLeft="8sp"/>
+	    </LinearLayout>
+	    <CheckBox 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        android:layout_width="wrap_content"
+	        android:button="@null"
+	        android:background="@drawable/pc_selfinfo_nicktie_bg"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginTop="8sp"/>
+   	 </RelativeLayout>
+   	 
+      <RelativeLayout
+        android:id="@+id/r_pc_self_read"
+        android:padding="6sp"
+        style="@style/r_pc_main_setting_style">
+	   
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="阅读口味" />
+	   
+	     <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#E5E5E5"
+        android:layout_marginLeft="10sp"/>
+    <TextView
+            style="@style/pc_main_selfinfo_text_style"
+            android:text="其他信息"
+            android:textColor="@color/textclor" />
+    <RelativeLayout
+        android:id="@+id/r_pc_self_mygold"
+        android:padding="6sp"
+        style="@style/r_pc_main_setting_style">
+	   
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="我的金币" />
+	    <TextView
+	        android:id="@+id/tv_pc_self_nickname"
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="25"
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow"/>
+	     <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r_pc_self_mylenevel"
+        android:padding="6sp"
+        style="@style/r_pc_main_setting_style">
+	   
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="我的等级" />
+	    <TextView
+	        android:id="@+id/tv_pc_self_nickname"
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="LV6跟帖局副处长"
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow"/>
+	     <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r_pc_self_mytool"
+         android:padding="6sp"
+        style="@style/r_pc_main_setting_style">
+	   
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="我的道具" />
+	    <TextView
+	        android:id="@+id/tv_pc_self_mytool"
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="砖石X0"
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow"/>
+	     <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r_pc_self_recordreward"
+        android:padding="6sp"
+        style="@style/r_pc_main_setting_style">
+	   
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="打赏记录" />
+	    <TextView
+	        android:id="@+id/tv_pc_self_recordreward"
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text=""
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow"/>
+	     <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+    <Button 
+        android:id="@+id/exsit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登出"
+        android:textColor="@color/white"
+        android:background="@drawable/exist_bt_bg"
+        android:layout_margin="10sp"/>
+	 </LinearLayout>
+	 </ScrollView>
+</RelativeLayout>

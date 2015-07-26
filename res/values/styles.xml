@@ -1,0 +1,114 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.AppNoTitle">
+	    <item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="AppTheme.AppNoTitle.AppFullScreen">
+	    <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+	</style>
+    <style name="ActionBar_titleStyle" >
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#fff</item>
+        
+    </style>
+    <style name="actionBar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#FAFAFA</item>
+        <item name="android:itemPadding">18sp</item>
+    </style>
+    <style name="actionBar_redstyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#EB413D</item>
+        <item name="android:itemPadding">18sp</item>
+        <item name="android:icon">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
+    </style>
+    
+    <style name="MyAcrionBar" parent="@android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/actionBar_style</item>
+    </style>
+    <style name="MyRedAcrionBar" parent="@android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/actionBar_redstyle</item>
+    </style>
+    
+    <style name="foot_bar_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/channel_bar_text</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="main_more_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_horizontal</item>
+        
+    </style>
+     <style name="pc_main_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_margin">8sp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="pc_main_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/textclor</item>
+        <item name="android:layout_marginLeft">14sp</item>
+        <item name="android:layout_marginRight">14sp</item>    
+    </style>
+    <style name="pc_main_selfinfo_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_margin">8sp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+     <style name="pc_main_setting_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingTop">14sp</item>
+        <item name="android:paddingBottom">14sp</item>
+         <item name="android:paddingLeft">14sp</item>
+        <item name="android:paddingRight">2sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name='android:background'>@drawable/pc_click_bg</item>
+    </style>
+    <style name="pc_iv_biz_pc_main_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/biz_pc_main_arrow</item>
+        <item name="android:layout_margin">6sp</item>
+        <item name="android:padding">6sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="r_pc_main_setting_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name='android:background'>@drawable/pc_click_bg</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>

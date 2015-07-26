@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <View android:id="@+id/edit_top" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/channel_list"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/channel_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2sp" >
+       
+        <HorizontalScrollView 
+            android:id="@+id/hsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <RadioGroup 
+                android:id="@+id/rg_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                </RadioGroup>
+        </HorizontalScrollView>
+            <ImageView 
+                android:id="@+id/iv_channel_edit"
+                android:layout_weight="1"
+                android:layout_width="80sp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:padding="8sp"
+                android:src="@drawable/biz_news_column_edit_arrow_down"
+                android:background="@drawable/channel_edit_arrowselector"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+		android:id="@+id/view_pager_main"       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/channel_list"
+        android:layout_above="@+id/foot_main">
+        
+    </android.support.v4.view.ViewPager>
+    
+    <LinearLayout 
+        android:id="@+id/foot_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2sp">
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="4sp"
+        android:background="@color/textclor"/>
+    <RadioGroup
+        android:id="@+id/rg_foot_list" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/rb_main_news"
+            style="@style/foot_bar_style"
+            android:text="新闻"
+            android:drawableTop="@drawable/foot_news"/>
+        <RadioButton 
+            android:id="@+id/rb_main_read"
+            style="@style/foot_bar_style"
+            android:text="阅读"
+            android:drawableTop="@drawable/foot_read"/>
+        <RadioButton 
+            android:id="@+id/rb_main_va"
+            style="@style/foot_bar_style"
+            android:text="视听"
+            android:drawableTop="@drawable/foot_va"/>
+        <RadioButton 
+            android:id="@+id/rb_main_discover"
+            style="@style/foot_bar_style"
+            android:text="发现"
+            android:drawableTop="@drawable/foot_discovery"/>
+        <RadioButton 
+            android:id="@+id/rb_main_pc"
+            style="@style/foot_bar_style"
+            android:text="我"
+            android:drawableTop="@drawable/foot_pc"/>
+    </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

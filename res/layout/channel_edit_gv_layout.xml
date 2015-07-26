@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<TextView 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/edit_item"
+	    android:layout_width="76sp" 
+	    android:layout_height="wrap_content"
+	    android:text="toutiao"
+	    android:textColor="@color/channel_item_text_color"
+	    android:textSize="14sp"
+	    android:padding="6sp"
+	    android:button="@null" 
+	    android:background="@drawable/channel_iten_bg_selector"
+	    android:layout_weight="1"
+	    android:gravity="center"
+	    />

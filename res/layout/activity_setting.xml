@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:background="#F6F6F6" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" >
+    
+       <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/pc_main_selfinfo_text_style"
+            android:text="账户信息"
+            android:textColor="@color/textclor" />
+        <TextView 
+            android:id="@+id/tv_setting_self"
+	        style="@style/pc_main_setting_text_style"
+	        android:text="个人设置"
+	        android:clickable="true"
+	        android:background="@drawable/pc_click_bg"/>
+        <TextView 
+	        style="@style/pc_main_setting_text_style"
+	        android:text="绑定其他平台"/>
+         <View 
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#E5E5E5"
+        android:layout_marginLeft="10sp"/>
+        <TextView
+            style="@style/pc_main_selfinfo_text_style"
+            android:text="系统信息"
+            android:textColor="@color/textclor" />
+       <RelativeLayout
+	        android:id="@+id/r_pc_setting_font"
+	        style="@style/r_pc_main_setting_style">
+	    <TextView
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="字体设置" />
+	    <TextView
+	        android:id="@+id/tv_pc_setting_font"
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="默认设置"
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow"/>
+	    <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+    <RelativeLayout
+	        android:id="@+id/r_pc_setting_font"
+	        style="@style/r_pc_main_setting_style">
+	    <TextView
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="正文字体" />
+	    <TextView
+	        android:id="@+id/tv_pc_setting_font"
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="中号字"
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow"/>
+	    <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+    <RelativeLayout
+	        android:id="@+id/r_pc_setting_newssend"
+	        style="@style/r_pc_main_setting_style"
+	        android:paddingRight="24sp">
+	    <TextView
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="要闻推送" />
+	    <CheckBox 
+	        android:id="@+id/iv_biz_pc_setting_newssend"
+	        android:layout_width="wrap_content"
+	        android:button="@null"
+	        android:background="@drawable/pc_selfinfo_nicktie_bg"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        />
+	    </RelativeLayout>
+	<RelativeLayout
+	        android:id="@+id/r_pc_setting_wifiout"
+	        style="@style/r_pc_main_setting_style"
+	        android:paddingRight="24sp">
+	    <TextView
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="Wi-Fi下自动离线" />
+	    <CheckBox 
+	        android:id="@+id/iv_biz_pc_setting_wifiout"
+	        android:layout_width="wrap_content"
+	        android:button="@null"
+	        android:background="@drawable/pc_selfinfo_nicktie_bg"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        />
+	    </RelativeLayout>  
+	    <RelativeLayout
+	        android:id="@+id/r_pc_setting_unwifi"
+	        style="@style/r_pc_main_setting_style"
+	        android:paddingRight="24sp">
+	    <TextView
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="非Wi-Fi不下载图片" />
+	    <CheckBox 
+	        android:id="@+id/iv_biz_pc_setting_unwifi"
+	        android:layout_width="wrap_content"
+	        android:button="@null"
+	        android:background="@drawable/pc_selfinfo_nicktie_bg"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        />
+	    </RelativeLayout>      
+    
+	    <RelativeLayout
+	        android:id="@+id/r_pc_setting_selfload"
+	        style="@style/r_pc_main_setting_style"
+	        android:paddingRight="24sp">
+	    <TextView
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="列表自动加载更多" />
+	    <CheckBox 
+	        android:id="@+id/iv_biz_pc_setting_selfload"
+	        android:layout_width="wrap_content"
+	        android:button="@null"
+	        android:background="@drawable/pc_selfinfo_nicktie_bg"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        />
+	    </RelativeLayout>      
+	    <RelativeLayout
+	        android:id="@+id/r_pc_setting_font"
+	        style="@style/r_pc_main_setting_style">
+	    <TextView
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="手动清理缓存" />
+	    <TextView
+	        android:id="@+id/tv_pc_setting_font"
+	        style="@style/pc_main_setting_text_style"
+	        android:layout_width="wrap_content"
+	        android:text="19.8M"
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow"/>
+	    <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow" />
+    </RelativeLayout>
+        <View 
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#E5E5E5"
+        android:layout_marginLeft="10sp"/>
+       <TextView
+           style="@style/pc_main_selfinfo_text_style"
+           android:text="其他设置"
+           android:textColor="@color/textclor" />
+        <RelativeLayout
+	        android:id="@+id/r_pc_self_email"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="6sp">
+	    <TextView
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="检查更新" />
+	    <TextView
+	        android:id="@+id/textView1"
+	        style="@style/pc_main_selfinfo_text_style"
+	        android:text="V51.1"
+	        android:textColor="@color/textclor"
+	        android:layout_toLeftOf="@+id/iv_biz_pc_main_arrow" />
+	    <ImageView 
+	        android:id="@+id/iv_biz_pc_main_arrow"
+	        style="@style/pc_iv_biz_pc_main_arrow"
+	         android:layout_margin="0sp" />
+    </RelativeLayout>
+	    <TextView 
+	        style="@style/pc_main_setting_text_style"
+	        android:text="帮助与反馈"/>
+	    <TextView 
+	        style="@style/pc_main_setting_text_style"
+	        android:text="应用推荐"/>
+	    <TextView 
+	        style="@style/pc_main_setting_text_style"
+	        android:text="为网易新闻推荐"/>
+	    <TextView 
+	        style="@style/pc_main_setting_text_style"
+	        android:text="封面故事"/>
+	    <TextView 
+	        style="@style/pc_main_setting_text_style"
+	        android:text="关于"/>
+   </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

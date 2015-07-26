@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistActivity"
+    android:background="#F6F6F6"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+    <EditText
+        android:id="@+id/et_regist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" 
+       android:layout_centerHorizontal="true"
+        android:hint="6到18字符，字母开头"
+        android:textColorHint="@color/text_hint">
+        <requestFocus />
+    </EditText>
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+    <EditText
+        android:id="@+id/et_regist_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="6到16个字符"
+        android:textColorHint="@color/text_hint"
+        android:layout_centerHorizontal="true" />
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+    <Button
+        android:id="@+id/bt_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册" 
+        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

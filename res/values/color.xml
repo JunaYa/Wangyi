@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <drawable name="channel_edit_arrow_up_color">#FAFAFA</drawable>
+    <drawable name="channel_edit_arrow_down_color">#e5e5e5</drawable>
+    <drawable name="channel_item_bg_default">#F8F8F8</drawable>
+    <drawable name="channel_item_bg_pressed">#EB413D</drawable>
+    <drawable name="pc_bg_press">#e5e5e5</drawable>
+    <drawable name="pc_bg_press_default">#F6F6F6</drawable>
+    <drawable name="va_text_white">#fff</drawable>
+    <drawable name="Wfff">#ffffff</drawable>
+    <color name="red">#EB413D</color>
+    <color name="textclor">#B8B8B8</color>
+    <color name="redmore">#B8382D</color>
+    <color name="text_hint">#D5D5D5</color>
+    <color name="white">#FAFAFA</color>
+    <color name="pwhite">#fff</color>
+    <color name="grade">#9B9B8C</color>
+    <color name="black">#333</color>
+    <color name="channel_item_bg">#F8F8F8</color>
+    <color name="gainsboro">#DCDCDC</color><!--淡灰色 -->   
+</resources>

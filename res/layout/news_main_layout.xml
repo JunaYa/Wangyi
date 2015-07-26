@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout 
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:padding="10sp"
+            android:layout_centerVertical="true"/>
+        <ImageView 
+            android:id="@+id/alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_main_menu_info"
+            android:padding="10sp"
+            android:layout_toLeftOf="@+id/overflow"/>
+        <ImageView 
+            android:id="@+id/overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:padding="10sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/edit_top" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/channel_list"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/channel_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2sp" 
+        android:layout_below="@+id/news_title">
+       
+        <HorizontalScrollView 
+            android:id="@+id/hsView_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <RadioGroup 
+                android:id="@+id/rg_channel_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                </RadioGroup>
+        </HorizontalScrollView>
+            <ImageView 
+                android:id="@+id/iv_channel_edit"
+                android:layout_weight="1"
+                android:layout_width="80sp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:padding="8sp"
+                android:src="@drawable/biz_news_column_edit_arrow_down"
+                android:background="@drawable/channel_edit_arrowselector"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+		android:id="@+id/view_pager_main_news"       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/channel_list"
+        android:layout_above="@+id/foot_main">
+        
+    </android.support.v4.view.ViewPager>
+    
+    
+    
+</RelativeLayout>

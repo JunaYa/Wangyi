@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" 
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tvFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+             android:textSize="16sp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivImgUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sence04" 
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+       />
+
+    <TextView
+        android:id="@+id/tvDigest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+         android:textColor="#9A9A9A" 
+        />
+
+</LinearLayout>
